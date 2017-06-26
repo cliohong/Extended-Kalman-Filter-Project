@@ -61,9 +61,11 @@ The Input file format looks like this way:
 |R	         |8.60363  |0.0290616|-2.99903  |1477010443399637|	8.6  |	0.25 |-3.00029|	0 |
 
 	
-** The EKF Algorithm reads form file reads all the lines and generates measurement structures**
-** The `MeasurementProcessor( )` is called with individual measurements (one by one). **
-** The results are saved**
+* The EKF Algorithm reads form file reads all the lines and generates measurement structures
+
+* The `MeasurementProcessor( )` is called with individual measurements (one by one). 
+
+* The results are saved.
 
 
 ### Output file format
