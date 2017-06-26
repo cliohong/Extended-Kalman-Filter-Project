@@ -32,11 +32,18 @@ Usage:
 Extended_Kalman_Filter [OPTION...] positional parameters
 
 -h, --help        Print help
+
 -i, --input arg   Input File
+
 -o, --output arg  Output file
+
 -v, --verbose     verbose flag
+
 -r, --radar       use only radar data
+
 -l, --lidar       use only lidar data
+
+
 # Results
 
 ### Input file format
@@ -49,14 +56,15 @@ The Input file format looks like this way:
 
 ---
 
-|R(for radar)| meas_rho |meas_phi|meas_rho_dot |timestamp | gt_px |gt_py |gt_vx | gt_vy |
-|:------------|:--------|:-------|:------------|:------|:-----|:-------|:-----|
-|R	         |8.60363   |0.0290616|  -2.99903  |1477010443399637|	8.6  |	0.25 |-3.00029|	0    |
+|R(for radar)| meas_rho|meas_phi|meas_rho_dot |timestamp | gt_px |gt_py |gt_vx | gt_vy |
+|:-----------|:--------|:-------|:------------|:---------|:-----|:-------|:-----|:------|
+|R	         |8.60363  |0.0290616|-2.99903  |1477010443399637|	8.6  |	0.25 |-3.00029|	0 |
 
 	
 ** The EKF Algorithm reads form file reads all the lines and generates measurement structures**
 ** The `MeasurementProcessor( )` is called with individual measurements (one by one). **
 ** The results are saved**
+
 
 ### Output file format
 The output file format looks like this way:
